@@ -1,9 +1,9 @@
 import React from "react";
-import ToDoList from "./components/ToDoList";
+import TimeTracker from "./components/TimeTracker";
 function App() {
   return (
-    <div className="app">
-      <ToDoList />
+    <div>
+      <TimeTracker />
     </div>
   );
 }
