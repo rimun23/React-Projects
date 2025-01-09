@@ -1,9 +1,9 @@
 import React from "react";
-import TimeTracker from "./components/TimeTracker";
+import VirtualDOM from "./components/VirtualDOM";
 function App() {
   return (
     <div>
-      <TimeTracker />
+      <VirtualDOM />
     </div>
   );
 }
