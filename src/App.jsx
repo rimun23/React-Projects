@@ -1,9 +1,13 @@
 import React from "react";
-import VirtualDOM from "./components/VirtualDOM";
+import CounterProvider from "./components/CounterProvider";
+import Counter from "./components/Counter";
 function App() {
   return (
-    <div>
-      <VirtualDOM />
+    <div className="main">
+      <h1>счётчик</h1>
+      <CounterProvider>
+        <Counter />
+      </CounterProvider>
     </div>
   );
 }
