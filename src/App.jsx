@@ -1,13 +1,12 @@
 import React from "react";
-import CounterProvider from "./components/CounterProvider";
-import Counter from "./components/Counter";
+import Bank from "./components/Bank";
+import BalanceCounter from "./components/BalanceCounter";
 function App() {
   return (
     <div className="main">
-      <h1>счётчик</h1>
-      <CounterProvider>
-        <Counter />
-      </CounterProvider>
+      <Bank>
+        <BalanceCounter />
+      </Bank>
     </div>
   );
 }
