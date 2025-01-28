@@ -4,47 +4,27 @@
   padding: 0;
   font-family: "Inter Tight", serif;
   font-size: 30px;
-  color: white;
 }
 .main {
-  background-color: black;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url("./img/1669950130_6-kartinkin-net-p-fon-dlya-prezentatsii-muzei-pinterest-7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.bank {
-  background-color: rgb(27, 27, 27);
+.cat {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.cat * {
+  margin: 20px;
+}
+.cat img {
+  background-image: url("./img/570230_1000-removebg-preview.png");
   padding: 30px;
-  border-radius: 20px;
-}
-.bank * {
-  margin: 10px;
-}
-.commands {
-  display: grid;
-  grid-template-columns: 200px 200px;
-  gap: 5px;
-}
-button {
-  padding: 10px;
-  height: 100%;
-  border-radius: 20px;
-  border: none;
-  background-color: rgba(172, 0, 0, 0.411);
-}
-.btn1,
-.btn3 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-.btn2,
-.btn4 {
-  grid-column-start: 3;
-  grid-column-end: 5;
+  background-position: center;
 }

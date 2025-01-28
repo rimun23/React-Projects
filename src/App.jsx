@@ -1,12 +1,9 @@
 import React from "react";
-import Bank from "./components/Bank";
-import BalanceCounter from "./components/BalanceCounter";
+import CatApi from "./components/CatApi";
 function App() {
   return (
     <div className="main">
-      <Bank>
-        <BalanceCounter />
-      </Bank>
+      <CatApi />
     </div>
   );
 }
