@@ -1,9 +1,9 @@
 import React from "react";
-import CatApi from "./components/CatApi";
+import TicketForAirbus from "./components/TicketForAirbus";
 function App() {
   return (
     <div className="main">
-      <CatApi />
+      <TicketForAirbus />
     </div>
   );
 }

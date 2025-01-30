@@ -1,30 +1,59 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-family: "Inter Tight", serif;
   font-size: 30px;
 }
+.zag {
+  font-family: "Great Vibes", serif;
+  color: rgb(0, 108, 197);
+  text-align: center;
+}
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("./img/1669950130_6-kartinkin-net-p-fon-dlya-prezentatsii-muzei-pinterest-7.jpg");
-  background-repeat: no-repeat;
+  background-image: url("./images/—Pngtree—3d\ render\ stunning\ white\ fluffy_13280975.jpg");
   background-size: cover;
 }
-.cat {
+.form {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(255, 255, 255, 0.452);
+  padding: 40px;
+  border-radius: 60px;
+  border: 10px solid rgba(255, 255, 255, 0.411);
 }
-.cat * {
-  margin: 20px;
+.form * {
+  margin: 10px;
 }
-.cat img {
-  background-image: url("./img/570230_1000-removebg-preview.png");
-  padding: 30px;
-  background-position: center;
+.form button {
+  background-color: rgb(0, 140, 255);
+  border-radius: 12px;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+input {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+select {
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+select:focus {
+  border-radius: 10px 10px 0 0;
+}
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
 }
