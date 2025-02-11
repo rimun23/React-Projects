@@ -5,10 +5,10 @@ const useMovies = () => {
     "А зори здесь тихие (1972)",
   ]);
   const addMovies = (movie) => {
-    setMovies([...movies, movie]);
+    setMovies((prevMovies) => [...prevMovies, movie]);
   };
   const removeMovie = (index) => {
-    setMovies(movies.filter((_, i) => i !== index));
+    setMovies((prevMovies) => prevMovies.filter((_, i) => i !== index));
   };
   return { movies, removeMovie, addMovies };
 };

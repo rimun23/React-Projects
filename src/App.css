@@ -1,7 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 * {
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
   font-family: "Inter Tight", serif;
   font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(31, 31, 31);
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(161, 0, 0);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: inset 0px 0px 30px 30px rgba(0, 0, 0, 0.349);
+}
+.adding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.adding * {
+  margin: 10px;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  list-style: upper-roman;
+  width: 100%;
+  align-items: center;
+}
+h1 {
+  border-bottom: 3px solid black;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  padding: 5px 20px;
+  margin-left: 20px;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  outline: none;
+}
+input::placeholder {
+  color: rgb(201, 201, 201);
 }

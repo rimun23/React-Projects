@@ -9,15 +9,17 @@ function AddMovies({ addMovies }) {
     }
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="adding">
       <label>Введите любимый фильм</label>
-      <input
-        type="text"
-        value={movie}
-        placeholder="write your favorite film"
-        onChange={(e) => setMovie(e.target.value)}
-      />
-      <button type="submit"></button>
+      <div className="intBtn">
+        <input
+          type="text"
+          value={movie}
+          placeholder="write your favorite film"
+          onChange={(e) => setMovie(e.target.value)}
+        />
+        <button type="submit">Добавить фильм</button>
+      </div>
     </form>
   );
 }
