@@ -1,9 +1,6 @@
 import { useState } from "react";
 const useMovies = () => {
-  const [movies, setMovies] = useState([
-    "Дети арбата",
-    "А зори здесь тихие (1972)",
-  ]);
+  const [movies, setMovies] = useState([]);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const API_KEY = "cff04c20-66ed-4eb4-b22e-0bc65600bf82";
@@ -12,24 +9,23 @@ const useMovies = () => {
     if (!query) return;
     setLoading(true);
     try {
-      const response = await fetch(
-        "https://kinopoiskapiunofficial.tech/api/v2.2/films/301",
-        {
-          method: "GET",
-          headers: {
-            "X-API-KEY": "cff04c20-66ed-4eb4-b22e-0bc65600bf82",
-            "Content-Type": "application/json",
-          },
-        }
-      );
-      const data = response.json();
+      const response = await fetch(`${API_URL}?keyword=${query}`, {
+        method: "GET",
+        headers: {
+          "X-API-KEY": API_KEY,
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await response.json();
       if (data.items) {
         setMovies(data.items);
       } else {
         setMovies([]);
       }
+      console.log(data);
     } catch (error) {
       console.error("Ошибка при запросе API", error);
+      setError("error");
     }
     setLoading(false);
   };

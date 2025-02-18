@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 * {
-  margin: 10px 0;
+  margin: 0;
   padding: 0;
   font-family: "Inter Tight", serif;
   font-size: 30px;
@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgb(31, 31, 31);
 }
 .main {
@@ -18,40 +18,43 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(161, 0, 0);
   border-radius: 20px;
   padding: 30px;
   box-shadow: inset 0px 0px 30px 30px rgba(0, 0, 0, 0.349);
 }
-.adding {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.search {
+  margin: 20px;
 }
-.adding * {
-  margin: 10px;
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
 }
 li {
-  display: flex;
-  justify-content: space-between;
-  list-style: upper-roman;
-  width: 100%;
-  align-items: center;
-}
-h1 {
-  border-bottom: 3px solid black;
-  width: 100%;
   text-align: center;
+  margin: 10px;
+  list-style: upper-roman;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid black;
+  width: 300px;
+  border-radius: 50px;
+  padding: 20px;
+  background-color: rgba(255, 0, 0, 0.308);
 }
-
+li img {
+  border-radius: 10px;
+}
 button {
   padding: 5px 20px;
   margin-left: 20px;
-  background-color: black;
+  background-color: rgb(184, 0, 0);
   border: none;
   cursor: pointer;
   border-radius: 20px;
+  transition: 0.2s;
 }
 input {
   border: none;
@@ -61,4 +64,7 @@ input {
 }
 input::placeholder {
   color: rgb(201, 201, 201);
+}
+button:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.397);
 }

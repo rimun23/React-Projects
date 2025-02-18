@@ -1,18 +1,19 @@
 import React from "react";
 
-const MovieList = ({ movies, removeMovie }) => {
+const MovieList = ({ movies }) => {
   return (
     <ul className="films">
-      {movies.map((movie, index) => (
-        <li key={index} className="film">
-          {movie}
-          <button
-            onClick={() => {
-              removeMovie(index);
-            }}
-          >
-            Delete
-          </button>
+      {movies.map((movie) => (
+        <li key={movie.kinopoiskId} className="film">
+          <img
+            src={movie.posterUrlPreview}
+            alt={movie.nameOriginal}
+            style={{ width: "200px", height: "300px" }}
+          />
+          <div>
+            <h3>{movie.nameRu}</h3>
+            <p>{movie.year}</p>
+          </div>
         </li>
       ))}
     </ul>
