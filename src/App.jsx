@@ -1,34 +1,20 @@
-import React, { useEffect, useState, useTransition } from "react";
+import React, { useState, useTransition, useCallback } from "react";
 import SearchBar from "./components/SearchBar";
 import UsersCard from "./components/Userscard";
+import useFetchUsers from "./hooks/useFetchUsers";
+import useFilteredUsers from "./hooks/useFilteredUsers";
 function App() {
-  const [users, setUsers] = useState([]);
   const [query, setQuery] = useState("");
-  const [filteredUsers, setFilteredUsers] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [filtredUsers, setFilteredUsers] = useState([]);
   const [isPending, startTransition] = useTransition();
-  useEffect(() => {
-    fetch("https://randomuser.me/api/?results=70")
-      .then((response) => response.json())
-      .then((data) => {
-        setUsers(data.results);
-        setFilteredUsers(data.results);
-        setIsLoading(false);
-      })
-      .catch((error) => {
-        console.error("Ошибка", error);
-      });
-  }, []);
-  const handleFilter = (value) => {
+  const { users, isLoading } = useFetchUsers();
+  const filteredUsers = useFilteredUsers(users, query);
+  const handleFilter = useCallback((value) => {
     setQuery(value);
     startTransition(() => {
-      const filtered = users.filter((user) =>
-        `${user.name.first}${user.name.last}`.toLowerCase().includes(value)
-      );
-      setFilteredUsers(filtered);
+      setFilteredUsers(value);
     });
-  };
-
+  }, []);
   return (
     <div className="main">
       <div className="all">

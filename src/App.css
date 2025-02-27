@@ -4,6 +4,7 @@
   padding: 0;
   font-family: "Inter Tight", serif;
   font-size: 30px;
+  color: white;
 }
 body {
   background-color: black;
@@ -18,10 +19,17 @@ body {
   align-items: center;
   justify-content: center;
 }
+.usercard * {
+  color: black;
+}
+.input {
+  color: black;
+}
 .usercard {
   background-color: rgb(235, 235, 235);
   border-radius: 20px;
   text-align: center;
+
   box-shadow: inset -30px -30px 40px rgba(0, 0, 0, 0.493);
   margin: 20px;
   padding: 10px;
