@@ -4,7 +4,6 @@
   padding: 0;
   font-family: "Inter Tight", serif;
   font-size: 30px;
-  color: white;
 }
 body {
   background-color: black;
@@ -20,9 +19,6 @@ body {
   justify-content: center;
 }
 .usercard * {
-  color: black;
-}
-.input {
   color: black;
 }
 .usercard {
