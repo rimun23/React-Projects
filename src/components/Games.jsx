@@ -1,6 +1,6 @@
 import React, { useState, Suspense } from "react";
 const ProductList = React.lazy(() => import("./ProductsList"));
-const Home = () => {
+const Games = () => {
   const [showProduct, setShowProduct] = useState(false);
   const handleShowProduct = () => {
     setShowProduct(true);
@@ -19,4 +19,4 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+export default Games;

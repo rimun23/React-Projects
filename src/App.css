@@ -4,16 +4,22 @@
   padding: 0;
   font-family: "Inter Tight", serif;
   font-size: 30px;
+  color: white;
 }
 body {
   min-height: 100vh;
-  background-color: rgb(218, 218, 218);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(117, 144, 224);
 }
 .main {
+  padding-top: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 100%vw;
 }
 img {
   width: 350px;
@@ -35,8 +41,8 @@ img {
   padding: 20px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.329);
 }
-h7 {
-  color: rgb(80, 80, 80);
+.card * {
+  color: black;
 }
 .price {
   background-color: rgba(255, 122, 113, 0.438);
@@ -57,4 +63,46 @@ button {
   border: none;
   cursor: pointer;
   color: white;
+}
+.greet {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 20vh;
+}
+nav {
+  background-color: rgb(92, 88, 163);
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  margin: 0 40px;
+  list-style: none;
+}
+li * {
+  text-decoration: none;
+  color: white;
+}
+.data p {
+  margin: 20px 0;
+}
+.contacts,
+.description,
+.greet {
+  background-color: rgb(255, 119, 109);
+  padding: 20px;
+  border-radius: 50px;
+  border: 10px solid rgb(255, 183, 115);
+}
+.description * {
+  margin: 20px 0;
 }

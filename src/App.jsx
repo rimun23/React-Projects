@@ -1,9 +1,9 @@
 import React from "react";
-import Home from "./components/Home";
+import RouterApp from "./Router";
 function App() {
   return (
     <div className="main">
-      <Home />
+      <RouterApp />
     </div>
   );
 }
