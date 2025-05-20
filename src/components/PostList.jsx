@@ -1,7 +1,5 @@
 import React from "react";
-import Loading from "./Loading";
-function PostList({ posts }) {
-  if (!posts) return <Loading />;
+function PostList({ posts, handleDeletePost }) {
   return (
     <div
       style={{
@@ -15,6 +13,7 @@ function PostList({ posts }) {
       <ul className="postList">
         {posts.map((post) => (
           <li key={post.id} className="post">
+            <button onClick={() => handleDeletePost(post.id)}>Х</button>
             <h3>{post.title}</h3>
             <p>{post.body}</p>
           </li>
