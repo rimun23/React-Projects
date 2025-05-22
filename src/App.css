@@ -183,6 +183,7 @@ nav ul li *:hover {
   border-radius: 5px;
   border: none;
   transition: 0.5s;
+  cursor: pointer;
 }
 .postForm button:hover {
   box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.377);
