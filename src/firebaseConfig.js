@@ -1,15 +1,12 @@
 import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
-import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyDo0FfjWHLmVy_aFKfklEYEbVU0LOYeaF8",
-  authDomain: "blog-4548a.firebaseapp.com",
-  databaseURL: "https://blog-4548a-default-rtdb.firebaseio.com",
-  projectId: "blog-4548a",
-  storageBucket: "blog-4548a.firebasestorage.app",
-  messagingSenderId: "725081530775",
-  appId: "1:725081530775:web:6c2b73ffe3d531e5f264d2",
+  apiKey: "AIzaSyDMiRBqrKeiOyPJHQ-XrlB96MtRnUv1VP0",
+  authDomain: "shop-de8b9.firebaseapp.com",
+  projectId: "shop-de8b9",
+  storageBucket: "shop-de8b9.firebasestorage.app",
+  messagingSenderId: "1002660395582",
+  appId: "1:1002660395582:web:98b41357e5940eb983af6f",
 };
 const app = initializeApp(firebaseConfig);
-export const database = getDatabase(app);
-export const auth = getAuth(app);
+export const db = getFirestore(app);

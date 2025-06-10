@@ -1,9 +1,10 @@
-import React from "react";
 const Home = () => {
   return (
     <div className="home">
-      <h1>Добро пожаловать в наш блог</h1>
-      <p>Сайт предоставляет посты на разные темы</p>
+      <div className="welcome">
+        <h1>Добро пожаловать в наш магазин!</h1>
+        <p>Здесь вы найдёте, то, что искали!</p>
+      </div>
     </div>
   );
 };

@@ -4,285 +4,98 @@
   padding: 0;
   font-family: "Inter Tight", serif;
   font-size: 30px;
-  color: rgb(255, 255, 255);
-  z-index: 1;
 }
 nav {
-  background-color: rgb(94, 126, 224);
-  width: 100%;
-  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 10vh;
+  background-image: url("https://img.lovepik.com/photo/40061/0298.jpg_wh860.jpg");
 }
-nav ul {
-  display: flex;
-}
-nav ul li {
-  list-style: none;
-  margin: 0 20px;
-}
-.exit {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-nav ul li *,
-.exit {
+nav * {
+  color: white;
   text-decoration: none;
+  margin: 0 20px;
+  text-shadow: 0 0 5px red;
+  transition: 0.5s;
 }
-nav ul li *:hover,
-.exit:hover {
-  text-decoration: underline;
+nav *:hover {
+  transform: scale(1.1);
 }
-#root {
+.home {
+  background-image: url(../public/9bfc5e60-c5ed-4afb-b106-5470783dcc09.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.welcome {
+  width: 50%;
+  height: 60vh;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome p {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.568);
+}
+.welcome h1:hover {
+  transform: scale(1.2);
+  color: white;
+  text-shadow: 0 0 5px rgb(255, 0, 34);
+}
+.welcome p:hover {
+  transform: scale(1.2);
+}
+.welcome h1,
+.welcome p {
+  text-shadow: 0 0 5px rgb(0, 153, 255);
+  transition: 0.5s;
+  font-size: 40px;
+}
+.productList {
+  padding: 20px;
+  background-image: url("https://images5.alphacoders.com/737/thumb-1920-737385.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productList h1 {
+  font-size: 50px;
+  text-shadow: 0 0 5px rgb(255, 0, 34);
+}
+.contacts {
+  background-image: url("https://preview.redd.it/is-there-a-lore-reason-why-hollow-purple-canonically-only-v0-00e91ldu0v8c1.jpeg?width=1080&crop=smart&auto=webp&s=ca48bf012261332fe52b759b758438966254acd6");
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: rgb(117, 144, 224);
-}
-.whole {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
-}
-.home {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.home h1 {
-  transition: 0.5s;
-}
-.home h1:hover {
-  text-shadow: 1px 1px 10px rgb(255, 166, 166);
-  color: rgb(20, 20, 20);
-  font-size: 55px;
-}
-.home * {
-  margin: 5px;
-  font-size: 45px;
-}
-.in_cloud {
-  position: relative;
-  width: 200px;
-  height: 100px;
-  display: flex;
-}
-.cloud {
-  z-index: 0;
-  position: absolute;
-}
-.ball {
-  position: absolute;
+.text {
+  background-color: white;
   border-radius: 100%;
-  background-color: rgba(255, 255, 255, 0.507);
-}
-.b1 {
-  bottom: 0;
-  right: 50%;
-  width: 70px;
-  height: 70px;
-}
-.b2 {
-  bottom: 0;
-  right: 0;
-  width: 80px;
-  height: 80px;
-}
-.b3 {
-  right: 30%;
-  width: 100px;
-  height: 100px;
-}
-.b4 {
-  bottom: 0;
-  width: 60px;
-  height: 60px;
-}
-.b5 {
-  bottom: 0;
-  right: 20%;
-  width: 65px;
-  height: 65px;
-}
-#cloud1 {
-  top: 100px;
-  left: 20%;
-}
-#cloud2 {
-  top: 170px;
-  right: 16%;
-}
-.postList {
-  display: grid;
-  grid-template-columns: 23vw 23vw 23vw 23vw;
-  justify-content: center;
-  align-items: center;
-}
-.post * {
-  font-size: 20px;
-}
-
-.post {
-  text-align: center;
-  width: 17vw;
-  list-style: none;
-  margin: 10px;
-  background-color: rgb(142, 161, 218);
-  border-radius: 40px;
-  padding: 20px;
-  transition: 0.5s;
-}
-.post:hover {
-  transform: scale(1.05);
-  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.116);
-}
-.loadAnim {
-  margin-top: 30px;
-  width: 200px;
-  height: 200px;
-  background-color: black;
-  animation: 1s infinite loading ease-in-out;
-  border: 15px solid rgb(49, 49, 49);
-}
-.postForm {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 40px;
-  border-radius: 30px;
-  background-color: rgb(159, 174, 219);
-}
-.postForm input,
-.postForm textarea {
-  color: black;
-}
-.postForm input,
-.postForm textarea {
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none;
-}
-.postForm h3 {
-  color: black;
-}
-.post {
-  position: relative;
-}
-.post button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  background-color: black;
-  border: none;
-  cursor: pointer;
-}
-.postForm button {
-  background-color: black;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.postForm button:hover {
-  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.377);
-}
-.postForm * {
-  margin: 10px;
-}
-input {
-  color: black;
-}
-.auth {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgb(152, 170, 223);
-  padding: 150px 50px;
-  border-radius: 30px;
-  border: 20px solid rgb(140, 161, 224);
-}
-.auth h2 {
-  margin-bottom: 20px;
-}
-form input {
-  background-color: transparent;
-  color: white;
-  border: none;
-  outline: none;
-  border-bottom: 5px solid white;
-}
-form input::placeholder {
-  color: rgb(221, 221, 221);
-}
-.cloudEnt {
-  position: absolute;
-  top: -40px;
-  left: 100px;
-  z-index: -1;
-}
-.cloudEnt .b1 {
-  bottom: 0px;
-  left: 50px;
-}
-.cloudEnt .b2 {
-  right: 30px;
-  top: 10px;
-}
-.cloudEnt .b3 {
-  bottom: 0;
-  right: 90px;
-}
-.enter {
-  position: relative;
-  border: none;
-
-  background-color: transparent;
-  cursor: pointer;
-  transition: 0.3s;
-  color: black;
-  z-index: 5;
-}
-.enter:hover {
-  color: red;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-@keyframes loading {
-  0% {
-    border-radius: 40px 70px 90px 120px;
-    transform: rotate(0deg);
-  }
-  30% {
-    border-radius: 120px 40px 70px 90px;
-    transform: rotate(90deg);
-  }
-  50% {
-    border-radius: 150px 70px 230px 70px;
-    transform: rotate(160deg);
-  }
-  70% {
-    border-radius: 70px 90px 120px 40px;
-    transform: rotate(220deg);
-  }
-  80% {
-    border-radius: 100px 170px 90px 250px;
-    transform: rotate(270deg);
-  }
-  100% {
-    border-radius: 40px 70px 90px 120px;
-    transform: rotate(360deg);
-  }
+  text-shadow: 0 0 20px rgb(140, 0, 255);
+  box-shadow: 0 0 30px 10px rgba(128, 0, 128, 0.308);
 }
